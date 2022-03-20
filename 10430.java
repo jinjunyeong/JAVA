@@ -7,11 +7,12 @@ Scanner input = new Scanner(System.in);
 		
 		int a = input.nextInt();
 		int b = input.nextInt();
+		int c = input.nextInt();
 		
-		System.out.println(a*(b%10));
-		System.out.println(a*((b%100)/10));
-		System.out.println(a*(b/100));
-		System.out.println(a*b);
+		System.out.println((a+b)%c);
+		System.out.println(((a%c)+(b%c))%c);
+		System.out.println((a*b)%c);
+		System.out.println(((a%c)*(b%c))%c);
 
 	}
 

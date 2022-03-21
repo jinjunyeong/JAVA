@@ -16,32 +16,13 @@ public class Main {
 		C = input.nextInt();
 		D = input.nextInt();
 		
-		int a = (((((D/60)+ C)/60) + A) % 24);
-		int b = ((D / 60) + B);
-		int c = ((D % 60) + C);
+		int a = ((((((D + C)/60)+ B)/60) + A) % 24);
+		int b = ((((D + C)/ 60) + B) % 60);
+		int c = (((D + C)% 60) );
 		
-		if(c>60){
-			b = (b + 1);
-			c = (c -60);
-			if(b>60) {
-				a = (a + 1);
-				b = (b - 60);
+		
 			
-			
-		}
-			else {
-				a = (((((D/60)+ C)/60) + A)% 24);
-				b = ((D / 60) + B + 1);
-				c = ((D % 60) + C -60);
-			}
-		}
-		else {
-			a = (((((D/60)+ C)/60) + A)% 24);
-			b = ((D / 60) + B);
-			c = ((D % 60) + C);
-			
-			
-		}
+		
 		System.out.println(a + " " + b + " " + c);
 				
 		

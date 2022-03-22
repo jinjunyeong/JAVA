@@ -1,0 +1,26 @@
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int a = 16;
+		
+		String a2 = Integer.toBinaryString(a);
+		
+		if(a ==16) {
+			System.out.println(Integer.toBinaryString(~a));
+			
+		}
+		System.out.println(Integer.toBinaryString(a));
+		
+				
+		
+		
+		
+		
+
+	
+
+}
+}
